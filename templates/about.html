@@ -1,0 +1,34 @@
+<!-- https://labyrinthos.co/blogs/tarot-card-meanings-list -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tarot Cards - About</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Macondo&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Tarot Reading - About</h1>
+        <p class="quote"><em>“Tarot is a way of sorting out what's bothering you and getting advice from the
+                best-informed source - you - in a way that you're likely to listen to.”
+            </em><br>Rosemary Edghill, Speak Daggers to Her</p>
+    </header>
+    <div class="central">
+        <p>The is a web application using Python, randomly selecting a card from a the 78 cards in the tarot deck.</p>
+        <p>The card images used are from the Rider Waite deck.</p>
+        <p>Descriptions and meanings are taken from <a href="https://labyrinthos.co/" style="text-decoration: underline;">Labyrinthos</a>.</p>
+    </div>
+</body>

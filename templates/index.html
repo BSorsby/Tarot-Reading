@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tarot Cards</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Macondo&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Tarot Reading</h1>
+        <p class="quote"><em>“Tarot is a way of sorting out what's bothering you and getting advice from the
+                best-informed source - you - in a way that you're likely to listen to.”
+            </em><br>Rosemary Edghill, Speak Daggers to Her</p>
+    </header>
+    <h2>Select a Reading</h2>
+
+    <div class="options">
+        <div class="one-card">
+            <a href="{{ url_for('one_card') }}">
+                <h3>One Card: The Daily Reading</h3>
+                <p>A simple one card reading for some guidance for the day ahead. This kind of reading is useful whenever you need an answer for something specific.</p>
+                <br>
+                <img src="../static/card-back.png">
+            </a>
+        </div>
+
+        <div class="three-cards">
+            <a href="{{ url_for('three_cards') }}">
+                <h3>Three Cards: Past, Present, Future</h3>
+                <p>A reading using three cards to represent the past, present and future. This is a useful drawing whenever you need a solution to a problem, or need to know how to achieve something that you want.</p>
+                <img src="../static/card-back.png">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

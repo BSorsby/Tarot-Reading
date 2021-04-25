@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tarot Cards</title>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Macondo&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>One Card: The Daily Reading</h1>
+    </header>
+    <div class="one-result">
+        <div class="result-left">
+            {% if position == 1 %}
+            <img src="/static/{{image}}" style="transform: rotate(180deg)">
+            {% else %}
+            <img src="/static/{{image}}">
+            {% endif %}
+        </div>
+        <div class="result-right">
+            {% if position == 1 %}
+                <h2>{{ card_name }} - Reversed </h2>
+                <p>Reversed Meaning: {{meaning_rev}}</p>
+            {% else %}
+                <h2>{{ card_name }} </h2>
+                <p>Meaning: {{meaning_up}}</p>
+            {% endif %}
+        </div>
+    </div>
+    <br>
+    <p class="description">{{description}}</p>
+</body>

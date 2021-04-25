@@ -1,0 +1,146 @@
+body,
+html {
+    height: 100%;
+    background-image: url(../background-image.jpg);
+    background-repeat:repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Macondo', cursive;
+    color: white;
+
+}
+nav {
+    width: 100%;
+    top:0;
+    left: 0;
+    position: fixed;
+    margin:0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(29, 29, 29);
+}
+
+h1 {
+    color: white;
+    font-size: 45px;
+    margin-top: 55px;
+    align-self:center;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    border-bottom: 2px white solid;
+}
+
+.quote {
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: auto; 
+    line-height: 1.5;
+}
+.options {
+    display:flex;
+    width: 80%;
+    margin: auto;
+    text-align:center;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.one-card {
+    font-weight: normal;
+    text-align:center;
+    width: 50%;
+    float: left;
+}
+.three-cards {
+    font-weight: normal;
+    text-align:center;
+    width: 50%;
+    float: right;
+}
+.one-card img,
+.three-cards img {
+    border-radius: 5px;
+    border: solid white 3px;
+    width: 200px;
+}
+
+.one-result{
+    font-weight: normal;
+    text-align:center;
+    width: 80%;
+    margin: auto;
+}
+
+.result-left {
+    width: 50%;
+    float: left;
+    align-content: center;
+    justify-content: center;
+}
+
+.result-left img {
+    width: 200px;
+}
+
+.result-right {
+    padding-top: 50px;
+    width: 50%;
+    float: right;  
+    background: rgba(0, 0, 0, 0.5);  
+}
+
+.result-right h2 {
+    font-size: 30px;
+}
+.result-right p {
+    font-size: 25px;
+}
+
+.description {
+    font-size: 20px;
+    padding-top: 30px;
+    clear: both;
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    background: rgba(0, 0, 0, 0.5); 
+  }
+
+.central {
+    text-align:center;
+    line-height: 2;
+    background: rgba(0, 0, 0); 
+    width: 70%;
+    padding: 15px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+}
